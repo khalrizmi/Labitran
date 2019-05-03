@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".TahapanSebelumCase">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/HomeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CustomToolbarStyle"
+        app:popupTheme="@style/CustomPopupStyle"
+        android:background="@color/colorPrimaryDark">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="m"
+                android:textStyle="italic"
+                android:paddingRight="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/textIcon"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Labitran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/HomeToolbar"
+        android:id="@+id/judul"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorTextIcon"
+            android:textSize="18dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Penggunaan Aplikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:textSize="16sp"
+                        android:text="1.  Down Load Aplikasi 'MLabitran' ke Handphone."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="2. Untuk Menggunakan Aplikasi Klik Icon Aplikasi 'MLabitran'."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="3. Masukkan User dan Password, kemudian 'Sign In'."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="4. Pilih Menu :"
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="4.1. Scan QR Code."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="4.2. Pilih Nama Bank."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="4.3. Pilih Lokasi ATM Bank."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="5. Laksanakan Pekerjaan, sesuai dengan Prosedur."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="6. Jika Telah Selesai Bekerja :"
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="6.1. Lakukan pengambilan Foto Tahapan Hasil kerja."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="7. Jika ada kasus pada Lokasi ATM :"
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="7.1. Pilih Menu Kasus dan Klik jenis kasusnya."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="7.2. Lakukan pengambilan Foto Kasus yang terjadi."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="8.Upload Data/Foto."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginTop="5dp"
+                        android:text="9. Klik Tombol Completed, untuk EXIT."
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

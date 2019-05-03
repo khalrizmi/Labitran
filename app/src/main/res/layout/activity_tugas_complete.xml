@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TugasComplete">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/HomeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CustomToolbarStyle"
+        app:popupTheme="@style/CustomPopupStyle"
+        android:background="@color/colorPrimaryDark">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="m"
+                android:textStyle="italic"
+                android:paddingRight="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/textIcon"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Labitran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/HomeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnCompleted">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/colorTextIcon"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="Deskripsi Pekerjaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Tugas Selesai"
+                android:textColor="@color/primaryText"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Terima Kasih telah menyelesaikan Pekerjaan hari ini..."
+                android:textSize="14sp"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundnext"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Completed"
+        android:textColor="@color/colorTextIcon" />
+
+
+</RelativeLayout>

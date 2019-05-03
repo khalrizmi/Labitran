@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasilPekerjaan">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/HomeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CustomToolbarStyle"
+        app:popupTheme="@style/CustomPopupStyle"
+        android:background="@color/colorPrimaryDark">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="m"
+                android:textStyle="italic"
+                android:paddingRight="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/textIcon"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Labitran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/HomeToolbar"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/judul"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/colorTextIcon"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="Hasil Pekerjaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/imagenull"
+                    android:src="@drawable/analysis"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/idText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand_light"
+                    android:text="Tidak ada Hasil"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+            </LinearLayout>
+            <ListView
+                android:visibility="gone"
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnTambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTextIcon"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Tambah"
+            android:textColor="@color/colorPrimaryDark" />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Selesai"
+            android:textColor="@color/colorTextIcon" />
+    </LinearLayout>
+</RelativeLayout>

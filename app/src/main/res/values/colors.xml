@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#78DCC6</color>
+    <color name="colorPrimaryDark">#2528ca</color>
+    <color name="colorAccent">#fda50c</color>
+    <color name="colorTextIcon">#FFF</color>
+    <color name="textIcon">#FFFFFF</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="dividercolor">#BDBDBD</color>
+    <color name="LightPrimary">#B3E5FC</color>
+    <color name="colorButton">#3d64ca</color>
+    <color name="colorGrey">#c7c6c6</color>
+    <color name="colorLightGrey">#E0E0E0</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_border">#ffafed44</color>
+</resources>

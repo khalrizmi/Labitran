@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MenuUtama">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/HomeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CustomToolbarStyle"
+        app:popupTheme="@style/CustomPopupStyle"
+        android:background="@color/colorPrimaryDark">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="m"
+                android:textStyle="italic"
+                android:paddingRight="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/textIcon"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Labitran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:weightSum="5"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_light"
+                android:text="Check ATM"
+                android:textAlignment="center"
+                android:textColor="@color/textIcon"
+                android:textSize="30dp" />
+            <TextView
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/colorTextIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Press Scan to detect the company"
+                />
+        </LinearLayout>
+        <ImageButton
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/btnScan"
+            android:tint="@color/secondaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundscan"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@color/primaryText"
+            android:src="@drawable/ic_settings_overscan_black_24dp"
+            android:textStyle="bold"/>
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:tint="@color/secondaryText"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_account_balance_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="17dp"
+                        android:text="Bank List"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_margin="10dp"
+                        android:entries="@array/nintansi"
+                        android:id="@+id/namaperusahaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:tint="@color/secondaryText"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_add_location_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="17dp"
+                        android:text="ATM Location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_margin="10dp"
+                        android:entries="@array/lokasiatm"
+                        android:id="@+id/lokasiperusahaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnMulai"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundnext"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="NEXT"
+            android:textColor="@color/textIcon"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
